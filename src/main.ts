@@ -6,14 +6,14 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 async function bootstrap() {
-  // // for https, local
+  // // for https, for local dev
   // const httpsOptions = {
   //   key: readFileSync(join(__dirname, '..', 'ssl', 'localhost-key.pem')),
   //   cert: readFileSync(join(__dirname, '..', 'ssl', 'localhost.pem')),
   // };
   // const app = await NestFactory.create(AppModule, { httpsOptions });
 
-  // for http, local yarn generate and server
+  // for http, local yarn generate and server, and for production!!
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({

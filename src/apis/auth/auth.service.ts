@@ -57,12 +57,12 @@ export class AuthService {
     if (res) {
       res.setHeader(
         'set-Cookie',
-        `refreshToken=${refreshToken}; path=/; domain=.channitest.store; SameSite=None;  Secure; `,
+        `refreshToken=${refreshToken}; path=/; domain=${process.env.PASSPORT_JWT_DOMAIN}; SameSite=None;  Secure; `,
       );
     } else {
       context.res.setHeader(
         'set-Cookie',
-        `refreshToken=${refreshToken}; path=/; domain=.channitest.store;  SameSite=None; Secure; `,
+        `refreshToken=${refreshToken}; path=/; domain=${process.env.PASSPORT_JWT_DOMAIN};  SameSite=None; Secure; `,
       );
     }
   }
