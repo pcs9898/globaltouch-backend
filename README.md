@@ -6,6 +6,7 @@
 
 
 ## 시연 영상 🎥
+#### Random Seeding 데이터가 들어간 상태로 시연한 영상입니다.
 - [GlobalTouch 시연 영상](https://youtu.be/mIOkJpQ-3s8?si=yXXtemwNp4oN1KKW)
 - ![runScreenShot.png](docs/runScreenShot.png)
 
