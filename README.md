@@ -34,7 +34,7 @@
 
 ## 기술 스택 🧑‍💻
 - Nestjs
-- Apollo Server
+- GraphQL
 - TypeORM
 - JWT
 - MySQL
